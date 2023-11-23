@@ -1,0 +1,34 @@
+<article>
+	<header>
+		{{#if data.title}}
+			<h2>{{data.title}}</h2>
+		{{/if}}
+
+		{{#if data.author}}
+			<p>
+				{{#if data.author_link}}
+					<small>// Written by
+						<a
+							href="{{data.author_link}}"
+						>{{data.author}}</a></small>
+				{{else}}
+					<small>// Written by {{data.author}}</small>
+				{{/if}}
+			</p>
+		{{/if}}
+
+		{{#if data.published}}
+			<p><small>// {{data.published}}</small></p>
+		{{/if}}
+	</header>
+
+	{{{body}}}
+
+	{{#if data.footnote}}
+		<footer>
+			<small>
+				{{data.footnote}}
+			</small>
+		</footer>
+	{{/if}}
+</article>

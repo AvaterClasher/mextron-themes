@@ -1,0 +1,1 @@
+A sleek and minimalist static site generator written in Rust. Designed with simplicity in mind, Mextron makes website creation a breeze.
